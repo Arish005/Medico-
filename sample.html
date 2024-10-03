@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+
+<html>
+  <head></head>
+  <script type="text/javascript" src="https://unpkg.com/webcam-easy@1.1.1/dist/webcam-easy.min.js"></script>
+
+  <body>
+    <video id="webCam" autoplay playsinlne width="800" height="600"></video>
+    <canvas id="canvas"></canvas>
+
+    <script>
+      const webCamElement = document.getElementById("webCam");
+      const canvasElement = document.getElementById("canvas");
+      const webcam = new Webcam(webCamElement, "user", canvasElement);
+      webcam.start();
+    </script>
+  </body>
+</html>
